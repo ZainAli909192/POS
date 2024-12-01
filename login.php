@@ -35,20 +35,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           header("Location: checklogin.php");
           exit;
         }
-      
         $error = "Invalid email or password";
       }
-      
       mysqli_close($conn);
       ?>
-      
-      
-
+   
       <div class="center">
          <div class="container">
             <div class="error"> <?php echo $error ?> </div>
             <div class="text">
-              Please Login here
+              Access your account by login
             </div>
             <form  method="post">
                <div class="data">
